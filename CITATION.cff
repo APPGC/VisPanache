@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+type: software
+title: VisPanache
+version: 1.0.0
+message: "Private research software snapshot accompanying the VisPanache manuscript; final manuscript citation has not yet been assigned."
+authors:
+  - family-names: Guyot
+    given-names: Adrien

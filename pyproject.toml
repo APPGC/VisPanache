@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vispanache"
+version = "1.0.0"
+description = "Apparent relative visible smoke opacity from ground-based RGB imagery"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "xarray", "pandas", "matplotlib", "pillow", "h5netcdf", "h5py", "pyyaml"]
+
+[project.optional-dependencies]
+images = ["imageio"]
+segmentation = ["torch", "opencv-python-headless", "scikit-image", "imageio"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["smoke_opacity*"]

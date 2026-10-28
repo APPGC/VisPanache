@@ -1,0 +1,46 @@
+{
+  "bottom": {
+    "camera": "bottom",
+    "tracking": "bottom/plume_tracking.nc",
+    "background": "bottom/background.npy",
+    "weight": "bottom/sky_weight.npy",
+    "quick": [
+      "frame_000700",
+      "frame_000817",
+      "frame_000893",
+      "frame_000895"
+    ]
+  },
+  "top_original": {
+    "camera": "top",
+    "tracking": "top/plume_tracking.nc",
+    "background": "top/background.npy",
+    "weight": "top/sky_weight.npy",
+    "inpaint": "top/background_inpaint_mask.npy",
+    "quick": [
+      "frame_00376"
+    ]
+  },
+  "top_guided": {
+    "camera": "top",
+    "tracking": "top/plume_tracking.nc",
+    "background": "top/background.npy",
+    "weight": "top/sky_weight.npy",
+    "inpaint": "top/background_inpaint_mask.npy",
+    "masks": "top/guided_full/stream_manifest.json",
+    "quick": [
+      "frame_00376"
+    ]
+  },
+  "top_lower_ablation": {
+    "camera": "top",
+    "tracking": "top/plume_tracking.nc",
+    "background": "top/background.npy",
+    "weight": "top/sky_weight.npy",
+    "inpaint": "top/background_inpaint_mask.npy",
+    "masks": "top/guided_lower_ablation/stream_manifest.json",
+    "quick": [
+      "frame_00376"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS_300_FRAME_LOCALITY_SUPPORT_BOUNDS_AND_FIVE_PRODUCT_ROUNDTRIPS",
+  "frames": 300,
+  "plume_pixel_frames": 25930260,
+  "modified_pixel_frames": 156819,
+  "modified_fraction": 0.006047721850841449,
+  "mean_opacity_increase_pixel_weighted": 0.0001873808857003752,
+  "frame_changed_fraction_max": 0.04312221415984244,
+  "edge_jump_reduction_median": 0.4419420189959076,
+  "edge_jump_reduction_min": -0.70066681853468,
+  "frames_edge_jump_reduced": 298,
+  "frames_with_repair_edges": 300,
+  "outside_neighbourhood_changed_pixels": 0,
+  "mask_changed_pixels": 0,
+  "original_opacity_and_qc_changed": false,
+  "source_hashes": {
+    "/Users/aguyot/codex-hpc/workflows/vispanache/seam_refinement_v1/prepared/validate_sequence.py": "bb00b34f21d269045dccd15ba1855ba05c0fb0fd0a15c48585518bb70bd18e71",
+    "/Users/aguyot/codex-hpc/workflows/vispanache/seam_refinement_v1/prepared/feather.py": "1cfaf5ede9f5129ef67d4c41956acd58372e800c69a8e12f70119179a67c165f",
+    "/Users/aguyot/codex-hpc/workflows/vispanache/seam_refinement_v1/prepared/envelope.py": "e1623f0807322da76e9d57417d20237cfc76ac9e3c151b4042a715895f1f7002"
+  },
+  "tracking_sha256": "7c1a24df0083e1e3634f043aaced27300b11d79877535f7a47e24da493558c96",
+  "frozen_retrieval_sha256": "d565c572699f59d35690593471e43334705291447567e1c150b1daa604382293",
+  "peak_rss_bytes": 796213248,
+  "elapsed_seconds": 455.6540277500171,
+  "top_camera_processed": false,
+  "limits": "Local empirical additive correction may bias opacity upward. Full saved-window numerical tests only; no independent physical accuracy, whole-video or top-camera validation. Not merged into private release candidate."
+}

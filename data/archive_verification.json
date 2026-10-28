@@ -1,0 +1,12 @@
+{
+  "status": "PASS_PRIVATE_INPUT_ARCHIVE_ALL_MEMBERS_AND_SOURCES_SHA_VERIFIED",
+  "archive": "/Users/aguyot/codex-hpc/workflows/vispanache/release_20261028_attempt01/data/VisPanache_reproduction_inputs_v1.0.0.zip",
+  "archive_sha256": "876e8da94e308c35d2f6ba36f9da25b184a10d9d09baaf88a3c0216ba1730d36",
+  "archive_bytes": 593382222,
+  "input_files": 66,
+  "input_bytes": 741052779,
+  "elapsed_seconds": 11.140057667042129,
+  "software_or_model_downloaded": false,
+  "private_github_uploaded": false,
+  "scope": "Savedpaperwindowsonly:300bottomRGB/masks and22topRGB/originalmasks plus2guidedvariants on those same22images"
+}

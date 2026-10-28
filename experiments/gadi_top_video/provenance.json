@@ -1,0 +1,21 @@
+{
+  "status": "PASS_MODEL_EXPORT_ONLY",
+  "pbs_job_id": "182396305.gadi-pbs",
+  "source_commit": "f1647e8d0c1d280991f4d1b7d974c2704537fe66",
+  "checkpoint_sha256": "9999e2341ceef5e136daa386eecb55cb414446a00ac2b55eb2dfd2f7c3cf8c9e",
+  "prompt_sha256": "bd8503060f92824bfda630b5e9036b9a47c31504b66222b5878aaf7c217c945d",
+  "frame_manifest_sha256": "f6805614a2bcd6d34e0a3691d1428595982bd0047276ff91e6700f93faaa0843",
+  "postprocess": "historical_identity",
+  "torch_version": "2.7.1+cu126",
+  "cuda_runtime": "12.6",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "python": "3.12.1 (main, Jan  9 2024, 15:00:29) [GCC 8.5.0 20210514 (Red Hat 8.5.0-18)]",
+  "platform": "Linux-4.18.0-553.148.1.el8.nci.x86_64-x86_64-with-glibc2.28",
+  "direction": "both",
+  "start_frame_index": 5,
+  "model_score_interpretation": "Model object score, not calibrated plume confidence",
+  "labels_review_status": "historical prompts only; no independent plume/cloud reference labels",
+  "frames_completed": 22,
+  "elapsed_seconds": 25.57098749699071,
+  "validation": "22 masks exported; accuracy/cloud labels unvalidated"
+}

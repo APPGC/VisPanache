@@ -1,0 +1,28 @@
+case_id: frames_20260428_hilltop_2
+
+input:
+  png_dir: /home/565/ag8736/pangeo/GoogleP/FLAMEX/Data_test/frames_20260428_hilltop_2
+  pattern: "*.png"
+
+output:
+  out_dir: /scratch/kl02/ag8736/frames_20260428_hilltop_2
+
+segmentation:
+  prompt: smoke
+  first_box_xyxy: [1700, 200, 3800, 1500]
+  source_xy: [1550, 1180]
+  pad_px: 700
+  min_area_px: 3000
+  min_box_w: 1200
+  min_box_h: 900
+
+background:
+  reference_time_index: 0
+  dilation_iterations: 50
+  inpaint_radius: 60
+
+opacity:
+  smoke_rgb: [0.8, 0.8, 0.8]
+  sky_threshold: 0.62
+  sky_weight_sigma: 50
+  final_smooth_sigma: 8

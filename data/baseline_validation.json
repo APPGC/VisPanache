@@ -1,0 +1,102 @@
+{
+  "status": "PASS_LOCAL_CPU_QC_REPLAY_AND_PRODUCT_ROUNDTRIP",
+  "completed_utc": "2026-10-27T13:05:18.423257+00:00",
+  "frames": 322,
+  "products": 322,
+  "figures": 9,
+  "animations": 2,
+  "local_only": true,
+  "remote_writes": false,
+  "software_installed": false,
+  "jobs_submitted": 0,
+  "totals": {
+    "bottom": {
+      "frames": 300,
+      "plume_pixel_frames": 25930260,
+      "valid_pixel_frames": 24446465,
+      "valid_fraction_pixel_weighted": 0.9427774731144231,
+      "valid_fraction_frame_min": 0.8151566406824533,
+      "valid_fraction_frame_median": 0.9471306367141261,
+      "valid_fraction_frame_max": 0.9898379007050956,
+      "historical_summary_rows_checked": 100,
+      "historical_max_numeric_error": 0.0,
+      "retained_baseline_max_abs_error": 0.0,
+      "regime_fractions": {
+        "1": 0.047189499835327525,
+        "2": 0.8948683507222835,
+        "3": 0.0013591070818418326,
+        "4": 0.0558634198037351,
+        "5": 0.0007196225568120027
+      },
+      "flag_fractions": {
+        "rgb_clipping": 0.0,
+        "near_clipping": 0.0,
+        "segmentation_unassessed": 1.0,
+        "background_unassessed": 1.0,
+        "ambiguous_regime": 0.05722252688557693,
+        "terrain_sky_transition": 0.014229861173779206,
+        "unstable_denominator": 0.0,
+        "insufficient_support": 1.685289696285344e-05,
+        "seam_repaired": 0.001139595206527046,
+        "sign_fallback": 0.005705457639067252,
+        "nonfinite_input": 0.0,
+        "background_inpainted": 0.0,
+        "background_unreliable": 0.0,
+        "segmentation_uncertain": 0.0,
+        "calibration_at_limit": 0.0001543370563966578,
+        "opacity_at_bound": 0.008954248819718737
+      }
+    },
+    "top": {
+      "frames": 22,
+      "plume_pixel_frames": 17772366,
+      "valid_pixel_frames": 16651000,
+      "valid_fraction_pixel_weighted": 0.9369039552752852,
+      "valid_fraction_frame_min": 0.8472772747197108,
+      "valid_fraction_frame_median": 0.9405973618295875,
+      "valid_fraction_frame_max": 0.9924836731563379,
+      "historical_summary_rows_checked": 22,
+      "historical_max_numeric_error": 0.0,
+      "retained_baseline_max_abs_error": 0.0,
+      "regime_fractions": {
+        "1": 0.5987795884914817,
+        "2": 0.33788748217316705,
+        "3": 0.005095607416592703,
+        "4": 0.05800043730812206,
+        "5": 0.0002368846106365354
+      },
+      "flag_fractions": {
+        "rgb_clipping": 5.626712841722931e-08,
+        "near_clipping": 0.0,
+        "segmentation_unassessed": 1.0,
+        "background_unassessed": 1.0,
+        "ambiguous_regime": 0.0630553635908691,
+        "terrain_sky_transition": 0.005509170810459339,
+        "unstable_denominator": 4.068113384565679e-05,
+        "insufficient_support": 0.0006447087574046134,
+        "seam_repaired": 0.0008755727853005053,
+        "sign_fallback": 0.004979021926512205,
+        "nonfinite_input": 0.0,
+        "background_inpainted": 0.027267781903658746,
+        "background_unreliable": 0.0,
+        "segmentation_uncertain": 0.0,
+        "calibration_at_limit": 0.004338308135225215,
+        "opacity_at_bound": 0.045713947146935864
+      }
+    }
+  },
+  "elapsed_seconds": 875.5717666659039,
+  "peak_rss_bytes": 2695413760,
+  "created_payload_bytes": 525426128,
+  "scope": "300 bottom-camera and22 top-camera saved tracking frames; full restored sequences not resegmented",
+  "source_sha256": {
+    "/Users/aguyot/codex-hpc/workflows/vispanache/cpu_qc_validation_v1/prepared/run_validation.py": "2885f6fd944676964154f8b30265553459bf13ef31f4ac01d789b0efc1393d59",
+    "/Users/aguyot/codex-hpc/workflows/vispanache/cpu_qc_validation_v1/prepared/baseline_adapter.py": "abe4ba51f368fb711584a50b72d00bc9ab488889ff443297807440d1a1914837",
+    "/Users/aguyot/codex-hpc/workflows/vispanache/cpu_qc_validation_v1/prepared/validation_metrics.py": "48354b84ff565c03461ee471ef3f9150cae6b1b5004184ccbfd9c5538e2e0b4c",
+    "/Users/aguyot/codex-hpc/workflows/vispanache/cpu_qc_validation_v1/prepared/render_products.py": "cb4a6af8177d8b757973f9c940cc01dba9aa58d1676a5def02e1c46039d893a8",
+    "/Users/aguyot/codex-hpc/workflows/vispanache/qc_v1/implementation/smoke_opacity/quality.py": "148d0e9972e8065a06d5fb9730cd934ce75683cb0515d842b739021b0ac07f3c",
+    "/Users/aguyot/codex-hpc/workflows/vispanache/cpu_qc_validation_v1/replay_preflight.json": "1b1e201ef210ae6fe5eb00585fb9bb86e0f2fe95077c350d0d91c85da514d915",
+    "/Users/aguyot/codex-hpc/workflows/vispanache/cpu_qc_validation_v1/baseline_forensics.json": "d57769324cccba0a96abf010614e8d93d0bac3d04ef4fe342c4dbbe231121f65"
+  },
+  "validation_limits": "Internal numerical replay/coverage/diagnostics only; heuristic confidence; no independent physical accuracy or absolute opacity validation. Changes in conditional means reflect selected support, not corrected opacity values."
+}

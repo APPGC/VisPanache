@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "obj_id": 1,
+  "frame_count": 22,
+  "width": 3840,
+  "height": 2160,
+  "prompts": [
+    {
+      "frame_index": 5,
+      "frame_id": "frame_00360",
+      "positive_points": [
+        [
+          2450,
+          1220
+        ],
+        [
+          2700,
+          1080
+        ],
+        [
+          2920,
+          930
+        ]
+      ],
+      "negative_points": [
+        [
+          2850,
+          250
+        ],
+        [
+          3500,
+          250
+        ],
+        [
+          3650,
+          600
+        ],
+        [
+          3600,
+          900
+        ],
+        [
+          2150,
+          900
+        ],
+        [
+          2450,
+          1400
+        ]
+      ],
+      "provenance": "Sensitivity ablation: retain first three historical lower-plume positives and all six historical negatives; upper region not labelled background"
+    }
+  ],
+  "review_keyframes": [
+    0,
+    5,
+    6,
+    9,
+    12,
+    14,
+    18,
+    21
+  ],
+  "review_status": "Historical subset ablation, not independent reference labels; upper region remains uncertain"
+}

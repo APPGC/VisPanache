@@ -1,0 +1,10 @@
+# Observed candidate test environment; Python 3.12.13
+numpy==1.26.4
+scipy==1.17.1
+xarray==2026.4.0
+pandas==3.0.3
+matplotlib==3.10.9
+Pillow==12.2.0
+h5netcdf==1.8.1
+h5py==3.16.0
+PyYAML==6.0.3

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "obj_id": 1,
+  "frame_count": 22,
+  "width": 3840,
+  "height": 2160,
+  "prompts": [
+    {
+      "frame_index": 5,
+      "frame_id": "frame_00360",
+      "positive_points": [
+        [
+          2450,
+          1220
+        ],
+        [
+          2700,
+          1080
+        ],
+        [
+          2920,
+          930
+        ],
+        [
+          3050,
+          760
+        ],
+        [
+          3180,
+          520
+        ],
+        [
+          3250,
+          280
+        ]
+      ],
+      "negative_points": [
+        [
+          2850,
+          250
+        ],
+        [
+          3500,
+          250
+        ],
+        [
+          3650,
+          600
+        ],
+        [
+          3600,
+          900
+        ],
+        [
+          2150,
+          900
+        ],
+        [
+          2450,
+          1400
+        ]
+      ],
+      "provenance": "Recovered successful notebook execution70/71; upper cloud-like region remains unvalidated"
+    }
+  ],
+  "review_keyframes": [
+    0,
+    5,
+    6,
+    9,
+    12,
+    14,
+    18,
+    21
+  ],
+  "review_status": "historical prompts only; no independent plume/cloud reference labels"
+}

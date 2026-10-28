@@ -1,0 +1,470 @@
+{
+  "version": "1.0.0",
+  "visibility": "private",
+  "scope": "Savedpaperwindowsonly:300bottomRGB/masks and22topRGB/originalmasks plus2guidedvariants on those same22images",
+  "not_included": "Fullrawsourcevideos,full3016/633framesequences,modelweights,environments,authenticationmaterial",
+  "files": [
+    {
+      "path": "bottom/plume_tracking.nc",
+      "bytes": 360166598,
+      "sha256": "7c1a24df0083e1e3634f043aaced27300b11d79877535f7a47e24da493558c96",
+      "source": "/Users/aguyot/Documents/EUBURN/VisPanache/frames_1s_cropped_mp4_HD_radar_v1_harmo/plume_tracking.nc",
+      "role": "300 original RGB frames and saved SAM3 masks,frame601\u2013900"
+    },
+    {
+      "path": "top/plume_tracking.nc",
+      "bytes": 216945227,
+      "sha256": "30dd13f3afc290e994c0689444b4c9b91940d9a30514061672b8eb2284698092",
+      "source": "/Users/aguyot/Documents/EUBURN/VisPanache/frames_20260428_hilltop_2_harmo/plume_tracking.nc",
+      "role": "22 original RGB frames and original masks,frame355\u2013376"
+    },
+    {
+      "path": "bottom/background.npy",
+      "bytes": 15451520,
+      "sha256": "dc05ce806d7b144589dd14ea4cf37be26ecc2f3169c940e372d2ec9adbb3dce5",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/finalization_v1/package_replay_inputs_attempt01/bottom_background.npy",
+      "role": "Frozen reference or sky-weight array used in exact replay"
+    },
+    {
+      "path": "bottom/sky_weight.npy",
+      "bytes": 5150592,
+      "sha256": "aff0789ec7a9a6f8d35e645291000c4512fa00f79129ffb0e57f8902425760ce",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/finalization_v1/package_replay_inputs_attempt01/bottom_sky_weight.npy",
+      "role": "Frozen reference or sky-weight array used in exact replay"
+    },
+    {
+      "path": "top/background.npy",
+      "bytes": 99532928,
+      "sha256": "78d045daea7b3a2ae0be9cdafcd2a2e129224cfa8fb0cbbe77e80a8f0efc21f7",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/finalization_v1/package_replay_inputs_attempt01/top_background.npy",
+      "role": "Frozen reference or sky-weight array used in exact replay"
+    },
+    {
+      "path": "top/sky_weight.npy",
+      "bytes": 33177728,
+      "sha256": "3cef25f5f553ec5f127cd94b5f5a1d7a7afc4b6734c1c5b71402dd9d5ffd7093",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/finalization_v1/package_replay_inputs_attempt01/top_sky_weight.npy",
+      "role": "Frozen reference or sky-weight array used in exact replay"
+    },
+    {
+      "path": "top/background_inpaint_mask.npy",
+      "bytes": 8294528,
+      "sha256": "a9accc4906eb19845c9821211911564c2b610db3ae7dd5fe6479533d81126b2a",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/finalization_v1/package_replay_inputs_attempt01/top_inpaint.npy",
+      "role": "Inpainted-reference indicator,not calibrated background quality"
+    },
+    {
+      "path": "bottom/reference_frame_000418.png",
+      "bytes": 673950,
+      "sha256": "3b7dabcf084914886e0b62ce4d44f75863073263e479f11454938572c16925ba",
+      "source": "/Users/aguyot/Documents/EUBURN/FLAMEX/Timelapses/frames_1s_cropped_mp4_HD/frame_000418.png",
+      "role": "Original bottom reference PNG"
+    },
+    {
+      "path": "top/guided_full/stream_manifest.json",
+      "bytes": 3160,
+      "sha256": "8adaf315d729bdbc161ec725fd8bc39944e3ff98cab6cd086929bbc37a646757",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_manifest.json",
+      "role": "Frame-to-mask mapping for existing SAM3 export"
+    },
+    {
+      "path": "top/guided_full/model_provenance.json",
+      "bytes": 1090,
+      "sha256": "fbca785beda98540d28e47e802c238b5cb20570fae06c0eb1af910b4676024a1",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/status.json",
+      "role": "Pinned source/checkpoint/runtime provenance,not weights"
+    },
+    {
+      "path": "top/guided_full/stream_000_frame_05.npz",
+      "bytes": 18512,
+      "sha256": "4c8efec798c028f79359bf15881fe0aca89b480d80407aac742ace190f73ca30",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_000_frame_05.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_001_frame_06.npz",
+      "bytes": 17676,
+      "sha256": "27339ea6d3766aeb98f7116a0b92228577ac8e791dd4cffe69c3098347dd8573",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_001_frame_06.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_002_frame_07.npz",
+      "bytes": 21681,
+      "sha256": "97e103424424692b9f5101f82753456e08a71ed9c70452298a3020e7cda96f25",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_002_frame_07.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_003_frame_08.npz",
+      "bytes": 20453,
+      "sha256": "a279e295349992ceff0b074416cfaf1805f0973480d979809e0677737ceb66dc",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_003_frame_08.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_004_frame_09.npz",
+      "bytes": 21115,
+      "sha256": "f17806783c0443538fedf2b9e3792f97e4adb7d5feb59f72c84cd3e0bf8b045b",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_004_frame_09.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_005_frame_10.npz",
+      "bytes": 20409,
+      "sha256": "2d604863029e9d78482653ab56fb96354a7486bbf67e67178e841fc6a735f14d",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_005_frame_10.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_006_frame_11.npz",
+      "bytes": 19817,
+      "sha256": "7c3f870881ca8de9571701dd3691e86c9e6f0dead613dc6ecb70f0b90b6b9e9a",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_006_frame_11.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_007_frame_12.npz",
+      "bytes": 18915,
+      "sha256": "67319961ff78096e627e7931a110576a2aa1cd37fbb352d15a75e94b86e17dce",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_007_frame_12.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_008_frame_13.npz",
+      "bytes": 17527,
+      "sha256": "2da060deeadf4a4076621cc7aad56f1010fe27c07a740058bb23ba8f096d48aa",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_008_frame_13.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_009_frame_14.npz",
+      "bytes": 18869,
+      "sha256": "4d6c5c901abbf3d6d86d224d42dc19b79309cbdf748f319e432e37139f706441",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_009_frame_14.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_010_frame_15.npz",
+      "bytes": 20970,
+      "sha256": "fe229f5f75524aa4946e238d2ee49e07eab652794afde4c299a396f603256622",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_010_frame_15.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_011_frame_16.npz",
+      "bytes": 21515,
+      "sha256": "9735bd43743f61d891f383cb8368219c5d6cd493858bdeb3c5c3e902b6aba97d",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_011_frame_16.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_012_frame_17.npz",
+      "bytes": 20507,
+      "sha256": "5b95d989f8e207b4b701ae898f52e59f6218dcf8095afd276140560521711c6a",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_012_frame_17.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_013_frame_18.npz",
+      "bytes": 20109,
+      "sha256": "859546d899a54d0c3a5b045026e98b5e3df4b90b89d9d56577b4a7448370e817",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_013_frame_18.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_014_frame_19.npz",
+      "bytes": 18560,
+      "sha256": "2b4ae9bb4eaae76c5aa75c3724f0c6db22902fee383bc9b1dcec71a5a1261dff",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_014_frame_19.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_015_frame_20.npz",
+      "bytes": 18495,
+      "sha256": "d24606a3a50ac8e0d9ee24f38f3624bc134704ddcb607e639fdd6d3341f94c1e",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_015_frame_20.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_016_frame_21.npz",
+      "bytes": 18569,
+      "sha256": "b165fc7cc8bb278530ee16beaf01dc4c872cff66d87a7c302b12d8c8fa1bb5e8",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_016_frame_21.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_017_frame_04.npz",
+      "bytes": 15256,
+      "sha256": "d1d106bd4a31c718c304032ca45e0f5251f04f5fd9c2f3ca0289103bdf480d31",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_017_frame_04.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_018_frame_03.npz",
+      "bytes": 17004,
+      "sha256": "97a7aa0a95e0ccc813e8e98c7687cc413fcb765bff598bfcee02c1fdd0036dad",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_018_frame_03.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_019_frame_02.npz",
+      "bytes": 18744,
+      "sha256": "776457bd7cb1221c183b5061a0bd2bba2e41805bad88bdb869ed38d20d27b68c",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_019_frame_02.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_020_frame_01.npz",
+      "bytes": 17863,
+      "sha256": "8fd1674d1106a92fc2992725feb23efdc63002e1630436fa95075f887c02ad57",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_020_frame_01.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_full/stream_021_frame_00.npz",
+      "bytes": 17960,
+      "sha256": "4c623d092103658e8dace6fd535f342fad11059dc97c9d9b71e84f79b19ffd15",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_identity_attempt02/run/stream_021_frame_00.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_manifest.json",
+      "bytes": 3151,
+      "sha256": "9a21c4fe40187e4fd6ffeafde93d7e879eab910abe4e347322519968b0c1ab15",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_manifest.json",
+      "role": "Frame-to-mask mapping for existing SAM3 export"
+    },
+    {
+      "path": "top/guided_lower_ablation/model_provenance.json",
+      "bytes": 1114,
+      "sha256": "ab7dd6388feeda3275b5feefd66c5da1498f9a998dceafd278977cc39645238b",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/status.json",
+      "role": "Pinned source/checkpoint/runtime provenance,not weights"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_000_frame_05.npz",
+      "bytes": 13337,
+      "sha256": "e1666ff46be91eb16bfe4be46a6abc23a00f134f511b54895b6d880df8612b24",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_000_frame_05.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_001_frame_06.npz",
+      "bytes": 12939,
+      "sha256": "0bc1fde56a6ec96f26a09f737aa3bd64e5699d70bf992a97c97038e815b06a2a",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_001_frame_06.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_002_frame_07.npz",
+      "bytes": 12846,
+      "sha256": "03cca55ecf0b3193e2d49bbb8c58201e4f644d763a984cbc42badf5618035e9a",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_002_frame_07.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_003_frame_08.npz",
+      "bytes": 12695,
+      "sha256": "8506cff3e960c118ad665f1be6251772a2d7b6075c6b84d340dbb3959fcb8e5a",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_003_frame_08.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_004_frame_09.npz",
+      "bytes": 13387,
+      "sha256": "1e7fcceb8854cff5c6272a291a70f38700e943e7b0d83e56b46b8a70b7c63783",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_004_frame_09.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_005_frame_10.npz",
+      "bytes": 14297,
+      "sha256": "827be76c0967cf35795fc63b76a03f7175ab7d842718d30aa09af1695655ed24",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_005_frame_10.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_006_frame_11.npz",
+      "bytes": 13557,
+      "sha256": "014001b8fe9a117068951662ef9f7920b669a05d3e601e66c38b5408ffc3a24f",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_006_frame_11.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_007_frame_12.npz",
+      "bytes": 13111,
+      "sha256": "2c11f533c3ed67b6fbff52fed747176895e111656e6d2b17a6130f3d7542c805",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_007_frame_12.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_008_frame_13.npz",
+      "bytes": 12804,
+      "sha256": "5653e84233508c3283240d3217289b868efd4630137e2008b28cba3ca62bc879",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_008_frame_13.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_009_frame_14.npz",
+      "bytes": 13194,
+      "sha256": "85feb688558e348d4e850a2c370638ea9737a371ad5d7fe6abf62765c0639c02",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_009_frame_14.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_010_frame_15.npz",
+      "bytes": 13389,
+      "sha256": "61ab5cdb4ceb6c03ed0c1d59b0e56614a32e26ed1f063d3f6261bc9c6cd53fdc",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_010_frame_15.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_011_frame_16.npz",
+      "bytes": 11410,
+      "sha256": "f7f21736d8968c70bd54b6bb6a51f8f45ef20b63ed695c336644b062a74a50c4",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_011_frame_16.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_012_frame_17.npz",
+      "bytes": 12890,
+      "sha256": "bd0ead1d96d3cd58f2737afbd1297d85f84b325ac582904ebd294d5b29834212",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_012_frame_17.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_013_frame_18.npz",
+      "bytes": 11509,
+      "sha256": "e523d928a509a8416a30d990b821d318e4d7db3ea670ff144b584e6265e062ba",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_013_frame_18.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_014_frame_19.npz",
+      "bytes": 11236,
+      "sha256": "26e50fdcc6c13a5671a97ecdb44f3f5da1c1f6b7093fac1baebedc4962568775",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_014_frame_19.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_015_frame_20.npz",
+      "bytes": 13032,
+      "sha256": "397ae4a2bfa1604d1e598609699a072b0ce4c708a091ce589448e9021fb4811e",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_015_frame_20.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_016_frame_21.npz",
+      "bytes": 11517,
+      "sha256": "87f1bce5e38a284a95d5fcc2cd7c4d2edb8e5d698eb325dc342f68999242953f",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_016_frame_21.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_017_frame_04.npz",
+      "bytes": 12070,
+      "sha256": "8c1a0fbe5c3dfc86c2d949c1088bcfbf1acd772b95c01c29ae176ba1d331e762",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_017_frame_04.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_018_frame_03.npz",
+      "bytes": 13276,
+      "sha256": "c43ef8e2603852c578ab098bce132f8b4b9b5da97926e4c9a5190d90c25a9011",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_018_frame_03.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_019_frame_02.npz",
+      "bytes": 12280,
+      "sha256": "73b56e34dc72d6019080f63d6d5c5ddd03f61714aaa1eb696700cf07fca8d639",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_019_frame_02.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_020_frame_01.npz",
+      "bytes": 13151,
+      "sha256": "8cd34e3b2d87122ce12c9f96d5b2ce5995b3f4eb741fe3f9e707d4e8ba2a1a80",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_020_frame_01.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "top/guided_lower_ablation/stream_021_frame_00.npz",
+      "bytes": 13199,
+      "sha256": "9efeebe214da67bb4188aa2ca7ecf00d7c3d5014f21ee4f04a74b1232de4d544",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/gpu_result_video_lower_only_attempt03/run/stream_021_frame_00.npz",
+      "role": "Saved model mask for CPU reproduction without a new segmentation run"
+    },
+    {
+      "path": "model_metadata/prompts_full.json",
+      "bytes": 1162,
+      "sha256": "bd8503060f92824bfda630b5e9036b9a47c31504b66222b5878aaf7c217c945d",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/prompts.json",
+      "role": "Successful full-guidance prompts"
+    },
+    {
+      "path": "model_metadata/prompts_lower_ablation.json",
+      "bytes": 1088,
+      "sha256": "fc29d47681c68971829b672ba79af6a366f3ba79b200bf77689093e385abaf30",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/prompts_lower_only.json",
+      "role": "Prompt-sensitivity ablation,not a cloud label"
+    },
+    {
+      "path": "expected/baseline_frame_metrics.json",
+      "bytes": 733385,
+      "sha256": "38bdf45205073b483489dbd021f1c4b256860a8ddfe0d0d460609f8fd4fafff1",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/cpu_qc_validation_v1/attempt01/frame_metrics.json",
+      "role": "Original300bottom+22top QC metrics"
+    },
+    {
+      "path": "expected/baseline_validation.json",
+      "bytes": 4828,
+      "sha256": "d26003116ca01f69200cfbc0ffed25b129b11f257bcee92ccd7a32fff96e4ae1",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/cpu_qc_validation_v1/attempt01/completion_receipt.json",
+      "role": "Original322product regression/roundtrip receipt"
+    },
+    {
+      "path": "expected/refinement_frame_metrics.json",
+      "bytes": 177254,
+      "sha256": "229a9898ee34661d44831c971c23f0b3a18ff1a9af2a1c7d7be4cad1fb1b89b1",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/seam_refinement_v1/sequence_attempt01/frame_metrics.json",
+      "role": "Optional local refinement metrics for all300bottom frames"
+    },
+    {
+      "path": "expected/refinement_validation.json",
+      "bytes": 1655,
+      "sha256": "e11e34cbaa77e828c92ca8b248ee0a4d29c51ec743a09ba30b451ac151a916ab",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/seam_refinement_v1/sequence_attempt01/completion.json",
+      "role": "Optional refinement support/locality checks and limits"
+    },
+    {
+      "path": "expected/top_prompt_comparison_metrics.json",
+      "bytes": 12308,
+      "sha256": "22bc3e1033dedee65094262f8b5e4574f46f50bc57a9904beebbd3c98a5ff384",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_segmentation_v1/prompt_qc_attempt01/frame_metrics.json",
+      "role": "Prompt-sensitivity diagnostic;agreementnottruth"
+    },
+    {
+      "path": "expected/ablation_background_metrics.json",
+      "bytes": 9547,
+      "sha256": "2d9aeff01c217985827478eeb5753617424fa7de9aac5a56909c89aa2e021f71",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/finalization_v1/paper_checks_attempt02/metrics.json",
+      "role": "Threebottomablations and6framecontrolledbackground sensitivity"
+    },
+    {
+      "path": "expected/mask_vs_opacity_connectivity.json",
+      "bytes": 7844,
+      "sha256": "16596eb0aa3463bbae0945b7bc77853e23c17fb94ec704b528e48a63599150b6",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/top_continuity_v1/radiometric_split_audit_attempt01/audit.json",
+      "role": "Segmentationconnectivity versus screened-opacity support"
+    },
+    {
+      "path": "configs/retrieval_paper.json",
+      "bytes": 470,
+      "sha256": "6e9951a36aaec1931f565589a7c54d325f765b39d168f4c8e59ea92bbf4a3d35",
+      "source": "/Users/aguyot/codex-hpc/workflows/vispanache/finalization_v1/private_candidate_attempt01/configs/retrieval_paper.json",
+      "role": "Exact retrieval settings"
+    }
+  ]
+}

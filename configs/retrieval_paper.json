@@ -1,0 +1,22 @@
+{
+  "smoke_lum": 0.95,
+  "gain_terrain": 1.0,
+  "gain_sky": 3.0,
+  "sky_weight_smooth_sigma": 2.0,
+  "interface_threshold": 0.5,
+  "support_inner_px": 1,
+  "support_outer_px": 25,
+  "terrain_conf_max_w": 0.45,
+  "sky_conf_min_w": 0.55,
+  "local_scale_sigma": 25,
+  "min_support_pixels": 15,
+  "scale_clip": [
+    0.6,
+    2.5
+  ],
+  "calibration_strength": 0.8,
+  "seam_repair": true,
+  "seam_filter_size": 5,
+  "seam_gap_fraction": 0.45,
+  "seam_min_local_max": 0.05
+}
