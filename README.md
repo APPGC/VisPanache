@@ -6,6 +6,12 @@ Private research snapshot for retrieving **apparent relative visible smoke opaci
 
 Algorithm development stops at this version. The original baseline is the primary result; the tested local seam-edge refinement is retained as an **optional, flagged companion**. The difficult top-camera scene remains a documented failure mode. No public disclosure or public licence is selected by this private snapshot.
 
+## Bottom-camera example
+
+![Visible timelapse alongside apparent smoke opacity superimposed on the RGB imagery](assets/bottom_camera_opacity_overlay.gif)
+
+Bottom-camera frames 601–900: visible imagery (left) and apparent-opacity overlay (right), using the original 0–1 colour scale and the optional seam-edge refinement. All 300 frames are shown at 10 frames/s for inspection; playback does not establish observation cadence. This compact GIF is a display preview of the refined estimate; use the NetCDF quality fields for quantitative screening.
+
 ## Reproduce the results
 
 Obtain the matching separately distributed data archive `VisPanache_reproduction_inputs_v1.0.0.zip`, check its SHA256 against `data/archive_verification.json`, and extract it into a separate directory. It contains the actual RGB frames, saved masks, references, weights, prompts, model provenance and expected metrics for the paper windows. Large arrays are kept out of Git history.

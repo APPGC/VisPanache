@@ -1,0 +1,22 @@
+{
+  "description": "Bottom-camera visible timelapse and superimposed apparent-opacity overlay, original colour scale, optional seam-edge refinement.",
+  "frames": 300,
+  "first_frame": 601,
+  "last_frame": 900,
+  "preview_fps": 10,
+  "preview_duration_seconds": 30,
+  "playback_is_observation_cadence": false,
+  "size": [
+    570,
+    250
+  ],
+  "palette_colours": 256,
+  "display_only_downsampling": true,
+  "retrieval_values_changed": false,
+  "source_rendering": "Verified original-style refined_png sequence from final_comparison_20261028_attempt01/run_attempt01; all300 numerical pairs matched saved products.",
+  "variant": "optional_refined_raw_overlay",
+  "screened_quantitative_product": false,
+  "sha256": "097f48c3b5adb26a233e21075e746f5b9108657a8a94bc7509611189f2cc57e7",
+  "bytes": 9460850,
+  "encoding": "FFmpeg scale=570:-1:lanczos; global256-colourpalette from all pixels including colourbar; no dithering; all300frames@10fps; infinite loop"
+}

@@ -25,3 +25,6 @@ reproduction_data/
 *.zip
 *.gif
 *.pdf
+
+# Curated README animation
+!assets/bottom_camera_opacity_overlay.gif
