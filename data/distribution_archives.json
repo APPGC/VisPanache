@@ -1,0 +1,15 @@
+{
+  "status": "PREPARED_UPLOAD_PENDING_AUTHENTICATION",
+  "baseline": {
+    "name": "VisPanache_reproduction_inputs_v1.0.0.zip",
+    "sha256": "876e8da94e308c35d2f6ba36f9da25b184a10d9d09baaf88a3c0216ba1730d36",
+    "bytes": 593382222
+  },
+  "zenodo_record_url": null,
+  "access": "unpublished_draft_then_author_review",
+  "late_bright_sky": {
+    "name": "VisPanache_late_bright_sky_reproduction_data_v1.0.0.zip",
+    "bytes": 124373307,
+    "sha256": "8e994e737bf11b6df8b5d74dc5277c7b788ce98b221eb4d0e507e1ecfc012238"
+  }
+}

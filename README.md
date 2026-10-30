@@ -8,7 +8,7 @@ Algorithm development stops at this version. The original baseline is the primar
 
 ## Reproduce the results
 
-Download the matching private release asset `VisPanache_reproduction_inputs_v1.0.0.zip`, check its SHA256 against `data/archive_verification.json`, and extract it into a separate directory. It contains the actual RGB frames, saved masks, references, weights, prompts, model provenance and expected metrics for the paper windows. Large arrays are kept out of Git history.
+Obtain the matching separately distributed data archive `VisPanache_reproduction_inputs_v1.0.0.zip`, check its SHA256 against `data/archive_verification.json`, and extract it into a separate directory. It contains the actual RGB frames, saved masks, references, weights, prompts, model provenance and expected metrics for the paper windows. Large arrays are kept out of Git history.
 
 Use Python 3.12 and the observed CPU dependency versions in `requirements_cpu_observed.txt`. After installing this package in your own environment, run:
 
@@ -64,4 +64,8 @@ The top case illustrates separate segmentation and radiometric failures. A conne
 
 ## Code, data and logo
 
-The intended destination is a private GitHub repository with the reproduction archive attached as a private release asset. Actual publication receipts and repository URL must be recorded after authenticated upload; a local tag does not establish remote publication. Archive/source hashes and lineage are retained. The logo is copied unchanged from the author's Desktop source. The original manuscript, images and historical outputs remain preserved.
+Code is prepared for a private GitHub repository; the reproduction frames and large arrays are kept in separate checksum-verified archives, prepared for an unpublished Zenodo dataset draft. Actual URLs and upload receipts must be recorded after authenticated upload; a local tag does not establish remote publication. Archive/source hashes and lineage are retained. The logo is copied unchanged from the author's Desktop source. The original manuscript, images and historical outputs remain preserved.
+
+## Additional bright-sky case
+
+Two additional eleven-frame bottom-camera windows (2495–2505 and 2595–2605) diagnose bright smoke and background-reference mismatch. CPU replay and figure scripts are in `reproduction/late_bright_sky/`; the separate case archive supplies the RGB frames, saved masks, references and expected products. These scripts preserve the frozen core and baseline sample counts. The original `source_manifest.json` applies to the v1.0.0 tag; see [release scope](docs/release_scope.md) for subsequent additions.

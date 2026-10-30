@@ -1,0 +1,8 @@
+{
+  "status": "PASS_EXACT_PAPER_ABLATION_BACKGROUND_AND_THRESHOLD_METRICS",
+  "ablation_frames": 3,
+  "reference_frames": 6,
+  "reference_scenarios": 24,
+  "threshold_frame_configurations": 81,
+  "code_sha256": "d565c572699f59d35690593471e43334705291447567e1c150b1daa604382293"
+}
