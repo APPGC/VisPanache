@@ -12,6 +12,19 @@ Algorithm development stops at this version. The original baseline is the primar
 
 Bottom-camera frames 601–900: visible imagery (left) and apparent-opacity overlay (right), using the original 0–1 colour scale and the optional seam-edge refinement. All 300 frames are shown at 10 frames/s for inspection; playback does not establish observation cadence. This compact GIF is a display preview of the refined estimate; use the NetCDF quality fields for quantitative screening.
 
+## Requirements and installation
+
+**Opacity/QC from saved masks runs on CPU. New SAM3 segmentation requires a separate GPU environment and Hugging Face model access.**
+
+| Workflow | Required environment |
+| --- | --- |
+| Saved-mask opacity, QC and paper reproduction | Python **3.12**; NumPy, SciPy, xarray, pandas, Matplotlib, Pillow, h5netcdf, h5py and PyYAML. No GPU, SAM3 or Hugging Face login required. |
+| New SAM3 segmentation | Linux, recent NVIDIA CUDA GPU; tested on **A100 80 GB**, Python **3.12.1**, PyTorch **2.7.1+cu126**, torchvision **0.22.1+cu126**, CUDA **12.6**. Separately install the pinned SAM3 source and obtain approved access to [facebook/sam3](https://huggingface.co/facebook/sam3). |
+
+For the GPU reference route, use Ampere or newer with native BF16 support. GADI's alternate H200 route was considered but not validated here; older P100/V100 GPUs are not supported targets for this workflow. A100 80 GB is the tested configuration, not a measured minimum VRAM requirement or a claim that only two GPU models can run SAM3.
+
+See the **[complete setup guide](docs/installation.md)** for CPU/GPU installation commands, exact SAM3 source/checkpoint pins, Hugging Face registration and `hf auth login`, GPU checks, dependency lists, GADI allocation guidance and the recorded native-postprocessing limitation. CPU versions are in [requirements_cpu_observed.txt](requirements_cpu_observed.txt); the separate GPU snapshot is [requirements_sam3_observed.txt](requirements_sam3_observed.txt). FFmpeg is required for MP4 export; Jupyter is optional.
+
 ## Reproduce the results
 
 Obtain the matching separately distributed data archive `VisPanache_reproduction_inputs_v1.0.0.zip`, check its SHA256 against `data/archive_verification.json`, and extract it into a separate directory. It contains the actual RGB frames, saved masks, references, weights, prompts, model provenance and expected metrics for the paper windows. Large arrays are kept out of Git history.
